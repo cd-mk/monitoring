@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/nochitbot-html.iml" filepath="$PROJECT_DIR$/.idea/nochitbot-html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/vuexy-html-bootstrap-admin-template.iml" filepath="$PROJECT_DIR$/.idea/vuexy-html-bootstrap-admin-template.iml" />
     </modules>
   </component>
 </project>
