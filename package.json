@@ -1,11 +1,10 @@
 {
   "name": "nochitbot-html",
   "version": "6.4",
-  "description": "Vuexy admin is super flexible, powerful, clean & modern responsive bootstrap 4 HTML admin template with unlimited possibilities.",
-  "author": "PIXINVENT",
+  "description": "monitoring",
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:pixinvent/vuesax-vuejs-admin-template.git"
+    "url": "git+https://github.com/cd-mk/monitoring.git"
   },
   "license": "ThemeForest Standard Licenses",
   "private": true,
