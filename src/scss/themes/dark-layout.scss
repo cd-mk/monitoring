@@ -1689,6 +1689,41 @@
           border-color: $theme-dark-border-color !important;
         }
       }
+      .monitor-details {
+        border-color: $theme-dark-border-color;
+        .email-scroll-area {
+          background-color: $theme-dark-body-bg;
+        }
+
+        .monitor-detail-header {
+          background-color: $theme-dark-card-bg;
+          border-color: $theme-dark-border-color;
+
+          .monitor-header-right {
+            .list-inline-item {
+              .dropdown-toggle,
+              .action-icon {
+                color: $theme-dark-body-color;
+              }
+            }
+          }
+        }
+        .monitor-info-dropup {
+          .dropdown-toggle::after {
+            background-image: url(str-replace(
+              str-replace($chevron-down, 'currentColor', $theme-dark-text-muted-color),
+              '#',
+              '%23'
+            ));
+          }
+        }
+
+        .monitor-message-wrapper,
+        .monitor-detail-head {
+          border-color: $theme-dark-border-color !important;
+        }
+      }
+
 
       // Compose mail
       #compose-mail {
@@ -1771,10 +1806,26 @@
         }
         .start-chat-area,
         .user-chats {
-          background-image: url($chat-bg-dark);
-          background-color: #1e232f;
+          // background-image: url($chat-bg-dark);
+          background-color: #373e4e;
         }
         .user-chats {
+          .divider .divider-text {
+            background: $theme-dark-card-bg;
+            &:before,
+            &:after {
+              border-color: $theme-dark-border-color;
+            }
+          }
+          .avatar img {
+            border-color: $theme-dark-border-color;
+          }
+        }
+        .user-chats-all {
+          // background-image: url($chat-bg-dark);
+          background-color: #373e4e;
+        }
+        .user-chats-all {
           .divider .divider-text {
             background: $theme-dark-card-bg;
             &:before,
@@ -1823,18 +1874,19 @@
 
   // Chat widget dark style
   .chat-widget {
-    .user-chats {
+    .user-chats, .user-chats-all {
       background-color: $theme-dark-widget-bg !important;
     }
     .card-header,
     .chat-app-form {
       background-color: $theme-dark-card-bg;
     }
-    .chat-app-window .user-chats .chat-left .chat-content {
+    .chat-app-window .user-chats .chat-left .chat-content,
+    .chat-app-window .user-chats-all .chat-left .chat-content-all {
       background-color: $theme-dark-card-bg !important;
       color: $theme-dark-body-color !important;
     }
-    .chat-app-window .user-chats .avatar img {
+    .chat-app-window .user-chats-all .avatar img {
       border-color: $theme-dark-body-bg;
     }
   }

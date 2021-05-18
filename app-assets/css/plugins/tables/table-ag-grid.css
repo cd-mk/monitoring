@@ -9,11 +9,13 @@
 }
 
 .aggrid .ag-icon-checkbox-checked, .aggrid .ag-icon-checkbox-indeterminate {
-  color : #7367F0 !important;
+  color : #0D92FF !important;
 }
 
 .aggrid .ag-root-wrapper-body {
-  min-height : calc(100% - 56px);
+  min-height : -webkit-calc(100% - 56px);
+  min-height :    -moz-calc(100% - 56px);
+  min-height :         calc(100% - 56px);
 }
 
 .aggrid .ag-header-cell-text {
@@ -23,7 +25,11 @@
 
 .aggrid .ag-paging-panel {
   display : block !important;
-  align-items : center;
+  -webkit-box-align : center;
+  -webkit-align-items : center;
+     -moz-box-align : center;
+  -ms-flex-align : center;
+          align-items : center;
   height : 98px;
 }
 
@@ -32,7 +38,11 @@
 }
 
 .aggrid .ag-paging-panel .ag-paging-page-summary-panel {
-  justify-content : center;
+  -webkit-box-pack : center;
+  -webkit-justify-content : center;
+     -moz-box-pack : center;
+  -ms-flex-pack : center;
+          justify-content : center;
   margin-left : 0;
   margin-top : 18px;
 }
@@ -40,7 +50,9 @@
 .aggrid .ag-paging-panel .ag-paging-page-summary-panel [ref='lbCurrent'], .aggrid .ag-paging-panel .ag-paging-page-summary-panel [ref='lbTotal'] {
   color : #FFFFFF;
   padding : 0.7rem 0.95rem;
-  border-radius : 0.5rem;
+  -webkit-border-radius : 0.5rem;
+     -moz-border-radius : 0.5rem;
+          border-radius : 0.5rem;
 }
 
 @media (max-width: 575.98px) {
@@ -51,7 +63,9 @@
 
 .aggrid .ag-paging-panel .ag-paging-button {
   background-color : #DAE1E7;
-  border-radius : 50%;
+  -webkit-border-radius : 50%;
+     -moz-border-radius : 50%;
+          border-radius : 50%;
   padding : 0.5rem 0rem;
   margin : 0 0.5rem;
   color : #6E6B7B !important;
@@ -81,7 +95,7 @@
 }
 
 .aggrid .ag-paging-panel span[ref='lbCurrent'] {
-  background-color : #7367F0;
+  background-color : #0D92FF;
 }
 
 .aggrid .ag-paging-panel span[ref='lbTotal'] {
@@ -96,18 +110,22 @@
 
 .aggrid ::-webkit-scrollbar-thumb {
   background : #DAE1E7;
-  border-radius : 20px;
+  -webkit-border-radius : 20px;
+          border-radius : 20px;
 }
 
 .aggrid ::-webkit-scrollbar-track {
   background : #F8F8F8;
-  border-radius : 20px;
+  -webkit-border-radius : 20px;
+          border-radius : 20px;
 }
 
 /*** PAGE FILTER DROPDOWN ***/
 .filter-btn {
   padding : 1.2rem !important;
-  border-radius : 5rem;
+  -webkit-border-radius : 5rem;
+     -moz-border-radius : 5rem;
+          border-radius : 5rem;
   font-size : 0.95rem;
 }
 

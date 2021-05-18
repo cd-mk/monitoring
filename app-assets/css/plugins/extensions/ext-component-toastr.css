@@ -3,11 +3,15 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter : alpha(opacity=100);
   max-width : none;
-  border-radius : 0.286rem;
+  -webkit-border-radius : 0.286rem;
+     -moz-border-radius : 0.286rem;
+          border-radius : 0.286rem;
 }
 
 #toast-container > div, #toast-container > div:hover {
-  box-shadow : 0 2px 20px 0 rgba(34, 41, 47, 0.08);
+  -webkit-box-shadow : 0 2px 20px 0 rgba(34, 41, 47, 0.08);
+     -moz-box-shadow : 0 2px 20px 0 rgba(34, 41, 47, 0.08);
+          box-shadow : 0 2px 20px 0 rgba(34, 41, 47, 0.08);
 }
 
 #toast-container > .toast {
@@ -46,7 +50,9 @@
   content : '';
   height : 24px;
   width : 24px;
-  border-radius : 50%;
+  -webkit-border-radius : 50%;
+     -moz-border-radius : 50%;
+          border-radius : 50%;
   color : #FFFFFF;
   position : absolute;
   left : 1rem;
@@ -54,7 +60,8 @@
 
 .toast:after {
   content : '';
-  background-size : 1rem;
+  -moz-background-size : 1rem;
+       background-size : 1rem;
   background-repeat : no-repeat;
   position : absolute;
   left : 1.38rem;
@@ -96,15 +103,15 @@
 }
 
 .toast-info .toast-title {
-  color : #00CFE8;
+  color : #00A6E8;
 }
 
 .toast-info .toast-progress {
-  background-color : #00CFE8;
+  background-color : #00A6E8;
 }
 
 .toast-info:before {
-  background-color : #00CFE8;
+  background-color : #00A6E8;
 }
 
 .toast-info:after {
@@ -200,7 +207,9 @@
 }
 
 .dark-layout #toast-container > div, .dark-layout #toast-container > div:hover {
-  box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
+  -webkit-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
+     -moz-box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
+          box-shadow : 0 4px 24px 0 rgba(34, 41, 47, 0.24);
 }
 
 .dark-layout #toast-container .toast {

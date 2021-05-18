@@ -1,10 +1,13 @@
 .knowledge-base-bg {
-  background-size : cover;
-  background-color : rgba(115, 103, 240, 0.12) !important;
+  -moz-background-size : cover;
+       background-size : cover;
+  background-color : rgba(13, 146, 255, 0.12) !important;
 }
 
 .knowledge-base-bg .kb-search-input .input-group:focus-within {
-  box-shadow : none;
+  -webkit-box-shadow : none;
+     -moz-box-shadow : none;
+          box-shadow : none;
 }
 
 .kb-search-content-info .kb-search-content .card-img-top {
@@ -16,8 +19,16 @@
 }
 
 .kb-title {
-  display : flex;
-  align-items : center;
+  display : -webkit-box;
+  display : -webkit-flex;
+  display :    -moz-box;
+  display : -ms-flexbox;
+  display :         flex;
+  -webkit-box-align : center;
+  -webkit-align-items : center;
+     -moz-box-align : center;
+  -ms-flex-align : center;
+          align-items : center;
 }
 
 @media (min-width: 768px) {

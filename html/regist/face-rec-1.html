@@ -1,0 +1,362 @@
+<<!DOCTYPE html>
+    <html class="loading dark-layout" lang="en" data-layout="dark-layout" data-textdirection="ltr">
+    <!-- BEGIN: Head-->
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+        <meta name="description"
+            content="Vuexy admin is super flexible, powerful, clean &amp; modern responsive bootstrap 4 admin template with unlimited possibilities.">
+        <meta name="keywords"
+            content="admin template, Vuexy admin template, dashboard template, flat admin template, responsive admin template, web app">
+        <meta name="author" content="PIXINVENT">
+        <title>Forgot Password Page - Vuexy - Bootstrap HTML admin template</title>
+        <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+        <link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
+
+
+        <!-- BEGIN: Vendor CSS-->
+        <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+        <!-- END: Vendor CSS-->
+
+        <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/bordered-layout.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/semi-dark-layout.css">
+
+        <!-- BEGIN: Page CSS-->
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-validation.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/page-auth.css">
+        <!-- END: Page CSS-->
+
+        <!-- BEGIN: Custom CSS-->
+        <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+         <link rel="stylesheet" href="../../assets/css/custom.css">
+        <!-- END: Custom CSS-->
+
+    </head>
+    <!-- END: Head-->
+
+    <!-- BEGIN: Body-->
+<body class="body-bg">
+<!-- Page content -->
+<!--3.22 guide css추가-->
+<div class="row cont-wrap guide">
+  <div class="col">
+    <div class="row header">
+      <div class="col inner">
+          <div class="row step-guide">
+              <div class="col step-guide-inner active">
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <div class="text-center step-guide-innertext">얼굴등록 안내</div>
+                  <a href="#" class="step-guide-dot"></a>
+              </div>
+
+              <div class="col step-guide-inner disabled"><!-- complete disabled -->
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <div class="text-center step-guide-innertext">얼굴 등록</div>
+                  <a href="#" class="step-guide-dot"></a>
+              </div>
+
+              <div class="col step-guide-inner disabled"><!-- disabled -->
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <div class="text-center step-guide-innertext">얼굴 등록 확인</div>
+                  <a href="#" class="step-guide-dot"></a>
+              </div>
+
+              <div class="col step-guide-inner disabled"><!-- disabled -->
+                  <div class="progress"><div class="progress-bar"></div></div>
+                  <div class="text-center step-guide-innertext">얼굴 등록 완료</div>
+                  <a href="#" class="step-guide-dot"></a>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="row content">
+        <div class="col inner">
+            <p class="guide-box pdf-download">
+                <a href="얼굴인식등록및확인서비스안내서_V.1.0.pdf" target="_blank" class="btn btn-outline-secondary icon-pdf btn-lg">얼굴인식등록및이용안내</a>
+            </p>
+            <h2 class="py-3 bullet-01">ff</h2>
+            <div class="text-cms">
+               ff
+            </div>
+
+            <h2 class="py-3 bullet-01">얼굴 등록 시 준수사항</h2>
+            <div class="card ex ex-good">
+                <h3><i class="fas fa-check-circle"></i> [정상 촬영 사진]</h3>
+                <p class="noti">정확한 얼굴인식을 위해서는 가급적 정면 얼굴을 촬영하여 등록해야 합니다.</p>
+                <div class="row inner">
+                    <div class="col"></div>
+                    <div class="col"><img src="../../assets/images/good-1.gif" alt=""></div>
+                    <div class="col"><img src="../../assets/images/good-2.gif" alt=""></div>
+                    <div class="col"></div>
+                </div>
+            </div>
+            <div class="card ex ex-wrong">
+                <h3><i class="fas fa-times-circle"></i> [정상 촬영 사진]</h3>
+                <div class="row inner">
+                    <div class="col">
+                        <img src="../../assets/images/wrong-1.gif" alt="">
+                        <p>저품질 사진</p>
+                    </div>
+                    <div class="col">
+                        <img src="../../assets/images/wrong-2.gif" alt="">
+                        <p>역광/부적절한 조명</p>
+                    </div>
+                    <div class="col">
+                        <img src="../../assets/images/wrong-3.gif" alt="">
+                        <p>어두운 그림자</p>
+                    </div>
+                    <div class="col">
+                        <img src="../../assets/images/wrong-4.gif" alt="">
+                        <p>두꺼운 안경테</p>
+                    </div>
+                </div>
+                <div class="row inner mt-3">
+                    <div class="col">
+                        <img src="../../assets/images/wrong-5.gif" alt="">
+                        <p>측면포즈</p>
+                    </div>
+                    <div class="col">
+                        <img src="../../assets/images/wrong-6.gif" alt="">
+                        <p>모자 착용</p>
+                    </div>
+                    <div class="col">
+                        <img src="../../assets/images/wrong-7.gif" alt="">
+                        <p>마스크 착용</p>
+                    </div>
+                    <div class="col">
+                        <img src="../../assets/images/wrong-8.gif" alt="">
+                        <p>얼굴 가림</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="guide-box mb-5">
+                <ul>
+                    <li>얼굴과 어깨는 정면을 향해야 합니다.(측면 포즈 불가)</li>
+                    <li>입은 다물어야 하며 웃거나 찡그리지 않은 자연스러운 표정(무표정)이어야 합니다.</li>
+                    <li>얼굴을 머리카락이나 장신구 등으로 가리면 않고 얼굴 전체(이마부터 턱까지)가 나와야 합니다.</li>
+                    <li>머리카락, 안경테 등으로 눈이 가려지지 않아야 합니다.</li>
+                    <li>유색의 미용 렌즈, 렌즈에 색이 들어간 안경 그리고 선글라스는 사용할 수 없습니다.</li>
+                    <li>마스크 착용으로 얼굴을 가리거나, 모자 등으로 머리를 가리면 안됩니다.</li>
+                    <li>증명 사진, 휴대폰 영상 등의 사진을 등록할 경우 시험 당일 시험장 입장이 불가능합니다.</li>
+                </ul>
+            </div>
+
+            <div class="card check">
+                얼굴 등록 시 잘못 된 사진을 등록할 경우 시험장 입장 제한 및 시험 중 응시생 본인 확인이 안되어 부정행위로 인식될 수 있음을 확인하였습니다.
+                <div class="custom-control custom-checkbox checkbox-xl mt-3">
+                    <input type="checkbox" class="custom-control-input checkOk" id="checkOk">
+                    <label class="custom-control-label" for="checkOk"> 확인 하였음</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+      <!-- footer area : E -->
+    <div class="row footer">
+        <div class="col inner btn-box center">
+            <a href="#" class="btn btn-primary btn-lg text-large disabled btn-checkOk">얼굴 등록하기 <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+      <!-- footer area : E -->
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<body class="vertical-layout vertical-menu-modern blank-page navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="blank-page">
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <div class="row content">
+                    <div class="col inner">
+                        <p class="guide-box pdf-download">
+                            <a href="얼굴인식등록및확인서비스안내서_V.1.0.pdf" target="_blank" class="btn btn-outline-secondary icon-pdf btn-lg">얼굴인식등록및이용안내</a>
+                        </p>
+                        <h2 class="py-3 bullet-01">ff</h2>
+                        <div class="text-cms">
+                        ff
+                        </div>
+
+                        <h2 class="py-3 bullet-01">얼굴 등록 시 준수사항</h2>
+                        <div class="card ex ex-good">
+                            <h3><i class="fas fa-check-circle"></i> [정상 촬영 사진]</h3>
+                            <p class="noti">정확한 얼굴인식을 위해서는 가급적 정면 얼굴을 촬영하여 등록해야 합니다.</p>
+                            <div class="row inner">
+                                <div class="col"></div>
+                                <div class="col"><img src="../../assets/images/good-1.gif" alt=""></div>
+                                <div class="col"><img src="../../assets/images/good-2.gif" alt=""></div>
+                                <div class="col"></div>
+                            </div>
+                        </div>
+                        <div class="card ex ex-wrong">
+                            <h3><i class="fas fa-times-circle"></i> [정상 촬영 사진]</h3>
+                            <div class="row inner">
+                                <div class="col">
+                                    <img src="../../assets/images/wrong-1.gif" alt="">
+                                    <p>저품질 사진</p>
+                                </div>
+                                <div class="col">
+                                    <img src="../../assets/images/wrong-2.gif" alt="">
+                                    <p>역광/부적절한 조명</p>
+                                </div>
+                                <div class="col">
+                                    <img src="../../assets/images/wrong-3.gif" alt="">
+                                    <p>어두운 그림자</p>
+                                </div>
+                                <div class="col">
+                                    <img src="../../assets/images/wrong-4.gif" alt="">
+                                    <p>두꺼운 안경테</p>
+                                </div>
+                            </div>
+                            <div class="row inner mt-3">
+                                <div class="col">
+                                    <img src="../../assets/images/wrong-5.gif" alt="">
+                                    <p>측면포즈</p>
+                                </div>
+                                <div class="col">
+                                    <img src="../../assets/images/wrong-6.gif" alt="">
+                                    <p>모자 착용</p>
+                                </div>
+                                <div class="col">
+                                    <img src="../../assets/images/wrong-7.gif" alt="">
+                                    <p>마스크 착용</p>
+                                </div>
+                                <div class="col">
+                                    <img src="../../assets/images/wrong-8.gif" alt="">
+                                    <p>얼굴 가림</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="guide-box mb-5">
+                            <ul>
+                                <li>얼굴과 어깨는 정면을 향해야 합니다.(측면 포즈 불가)</li>
+                                <li>입은 다물어야 하며 웃거나 찡그리지 않은 자연스러운 표정(무표정)이어야 합니다.</li>
+                                <li>얼굴을 머리카락이나 장신구 등으로 가리면 않고 얼굴 전체(이마부터 턱까지)가 나와야 합니다.</li>
+                                <li>머리카락, 안경테 등으로 눈이 가려지지 않아야 합니다.</li>
+                                <li>유색의 미용 렌즈, 렌즈에 색이 들어간 안경 그리고 선글라스는 사용할 수 없습니다.</li>
+                                <li>마스크 착용으로 얼굴을 가리거나, 모자 등으로 머리를 가리면 안됩니다.</li>
+                                <li>증명 사진, 휴대폰 영상 등의 사진을 등록할 경우 시험 당일 시험장 입장이 불가능합니다.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card check">
+                            얼굴 등록 시 잘못 된 사진을 등록할 경우 시험장 입장 제한 및 시험 중 응시생 본인 확인이 안되어 부정행위로 인식될 수 있음을 확인하였습니다.
+                            <div class="custom-control custom-checkbox checkbox-xl mt-3">
+                                <input type="checkbox" class="custom-control-input checkOk" id="checkOk">
+                                <label class="custom-control-label" for="checkOk"> 확인 하였음</label>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/pages/page-auth-login.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+</body>
+
+
+
+
+
+
+
+
+<!-- / Page content -->
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/pages/page-auth-login.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function () {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+    <script>
+        //확인체크하면 버튼 활성화
+        $('.checkOk[type="checkbox"]').click(function () {
+            var tmpp = $(this).prop('checked');
+            // this를 사용하여 클릭한 checkbox 가 체크되도록 설정
+            if (tmpp) {
+                $(".btn-checkOk").removeClass("disabled");
+            } else {
+                $(".btn-checkOk").addClass("disabled");
+            }
+        });
+    </script>
+    </body>
+    <!-- END: Body-->
+
+    </html>

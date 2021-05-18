@@ -2,9 +2,13 @@
 .context-menu-list {
   margin : 0;
   padding : 0.5rem 0;
-  border-radius : 0.358rem;
+  -webkit-border-radius : 0.358rem;
+     -moz-border-radius : 0.358rem;
+          border-radius : 0.358rem;
   border : 1px solid rgba(34, 41, 47, 0.05);
-  box-shadow : 0 5px 25px rgba(34, 41, 47, 0.1);
+  -webkit-box-shadow : 0 5px 25px rgba(34, 41, 47, 0.1);
+     -moz-box-shadow : 0 5px 25px rgba(34, 41, 47, 0.1);
+          box-shadow : 0 5px 25px rgba(34, 41, 47, 0.1);
   min-width : 10rem;
 }
 
@@ -18,12 +22,12 @@
 }
 
 .context-menu-list .context-menu-item.context-menu-hover, .context-menu-list .context-menu-item:hover, .context-menu-list .context-menu-item:focus {
-  background-color : rgba(115, 103, 240, 0.12) !important;
-  color : #7367F0;
+  background-color : rgba(13, 146, 255, 0.12) !important;
+  color : #0D92FF;
 }
 
 .context-menu-list .context-menu-item.context-menu-hover.context-menu-submenu:after, .context-menu-list .context-menu-item:hover.context-menu-submenu:after, .context-menu-list .context-menu-item:focus.context-menu-submenu:after {
-  border-color : transparent transparent transparent #7367F0 !important;
+  border-color : transparent transparent transparent #0D92FF !important;
 }
 
 .context-menu-list .context-menu-item:focus {
@@ -44,7 +48,7 @@
 }
 
 .dark-layout .context-menu-list .context-menu-item.context-menu-hover > span {
-  color : #7367F0;
+  color : #0D92FF;
 }
 
 .dark-layout .context-menu-list .context-menu-item.context-menu-submenu:after {
@@ -56,7 +60,10 @@
 }
 
 [data-textdirection='rtl'] .context-menu-list .context-menu-item.context-menu-submenu:after {
-  transform : rotate(180deg);
+  -webkit-transform : rotate(180deg);
+     -moz-transform : rotate(180deg);
+      -ms-transform : rotate(180deg);
+          transform : rotate(180deg);
   top : 1.2rem;
   right : 1rem;
   left : auto;
@@ -64,7 +71,7 @@
 }
 
 [data-textdirection='rtl'] .context-menu-list .context-menu-item.context-menu-hover.context-menu-submenu:after {
-  border-color : transparent #7367F0 transparent transparent !important;
+  border-color : transparent #0D92FF transparent transparent !important;
 }
 
 [data-textdirection='rtl'] .context-menu-list .context-menu-item > .context-menu-list {

@@ -1,13 +1,6 @@
 var htmlbeautify = require('gulp-html-beautify');
 
 module.exports = (gulp, callback) => {
-  const beautifyHtmlDemoTask = function () {
-    return gulp
-      .src('html-demo/**/*.html')
-      .pipe(htmlbeautify({ indentSize: 2 }))
-      .pipe(gulp.dest('./html-demo/'));
-  };
-
   const beautifyHtmlTask = function () {
     return gulp
       .src('html/**/*.html')
@@ -26,7 +19,6 @@ module.exports = (gulp, callback) => {
   // Exports
 
   return {
-    html_demo: beautifyHtmlDemoTask,
     html: beautifyHtmlTask,
     starter_kit: beautifySkTask
   };

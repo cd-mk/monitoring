@@ -44,7 +44,7 @@ $(function () {
     overlay = $('.body-content-overlay'),
     isRtl = $('html').attr('data-textdirection') === 'rtl';
 
-  var assetPath = '../../../app-assets/';
+  var assetPath = '../app-assets/';
 
   if ($('body').attr('data-framework') === 'laravel') {
     assetPath = $('body').attr('data-asset-path');

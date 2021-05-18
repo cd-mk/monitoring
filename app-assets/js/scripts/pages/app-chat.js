@@ -19,6 +19,7 @@ $(function () {
     userProfileSidebar = $('.user-profile-sidebar'),
     statusRadio = $('.chat-application .user-status input:radio[name=userStatus]'),
     userChats = $('.user-chats'),
+    userChatsAll = $('.user-chats-all'),
     chatsUserList = $('.chat-users-list'),
     chatList = $('.chat-list'),
     contactList = $('.contact-list'),
@@ -49,6 +50,12 @@ $(function () {
       });
     }
 
+    if (userChatsAll.length > 0) {
+      var chatsUser = new PerfectScrollbar(userChatsAll[0], {
+        wheelPropagation: false
+      });
+    }
+
     // User profile right area
     if (profileSidebarArea.length > 0) {
       var user_profile = new PerfectScrollbar(profileSidebarArea[0]);
@@ -57,6 +64,7 @@ $(function () {
     chatUsersListWrapper.css('overflow', 'scroll');
     userProfileSidebar.find('.user-profile-sidebar-area').css('overflow', 'scroll');
     userChats.css('overflow', 'scroll');
+    userChatsAll.css('overflow', 'scroll');
     profileSidebarArea.css('overflow', 'scroll');
 
     // on user click sidebar close in touch devices
@@ -151,8 +159,9 @@ $(function () {
 
   // auto scroll to bottom of Chat area
   chatsUserList.find('li').on('click', function () {
-    userChats.animate({ scrollTop: userChats[0].scrollHeight }, 400);
+    userChats.animate({ scrollTop: userChats[0].scrollHeight }, 200);
   });
+  
 
   // Main menu toggle should hide app menu
   if (menuToggle.length) {
@@ -237,6 +246,9 @@ $(function () {
         recognition.onresult = function (event) {
           $this.closest('.form-send-message').find('.message').val(event.results[0][0].transcript);
         };
+        recognition.onresult = function (event) {
+          $this.closest('.form-send-message').find('.message-all').val(event.results[0][0].transcript);
+        };
         recognition.onspeechend = function (event) {
           listening = false;
           recognition.stop();
@@ -275,5 +287,14 @@ function enterChat(source) {
     $('.chat:last-child .chat-body').append(html);
     $('.message').val('');
     $('.user-chats').scrollTop($('.user-chats > .chats').height());
+  }
+}
+function enterChatAll(source) {
+  var messageAll = $('.message-all').val();
+  if (/\S/.test(messageAll)) {
+    var html = '<div class="chat-content-all">' + '<p>' + messageAll + '</p>' + '</div>';
+    $('.chat:last-child .chat-body').append(html);
+    $('.message-all').val('');
+    $('.user-chats-all').scrollTop($('.user-chats-all > .chats').height());
   }
 }

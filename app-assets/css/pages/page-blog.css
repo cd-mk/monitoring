@@ -17,12 +17,11 @@
 }
 
 .blog-sidebar .blog-recent-posts img {
-  -o-object-fit : cover;
-     object-fit : cover;
+  object-fit : cover;
 }
 
 .blog-sidebar .blog-recent-posts .text-body-heading:hover {
-  color : #5E50EE !important;
+  color : #0085F3 !important;
 }
 
 .blog-sidebar .blog-recent-post-title, .blog-sidebar .blog-category-title {

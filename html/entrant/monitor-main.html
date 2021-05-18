@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="loading dark-layout" lang="en" data-layout="dark-layout" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="Nochitbot">
+    <meta name="keywords" content="Nochitbot">
+    <meta name="author" content="PIXINVENT">
+    <title>Nochitbot - 비대면 치팅방지 솔루션 시험감독관</title>
+    <link rel="apple-touch-icon" href="../../app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../app-assets/images/ico/favicon.ico">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/vendors/css/vendors.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/components.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/themes/dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/forms/form-quill-editor.css">
+    <link rel="stylesheet" type="text/css" href="../../app-assets/css/plugins/extensions/ext-component-toastr.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-chat.css">
+        <link rel="stylesheet" type="text/css" href="../../app-assets/css/pages/app-chat-list.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static menu-expanded" data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-dark navbar-shadow">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <a class="navbar-brand" href="../../starter-kit/ltr/vertical-menu-template-dark/">
+                    <!-- <img src="../../app-assets/images/common/logo.png" alt="user-avatar" height="32" width="32">-->
+                    <h2 class="brand-text">Nochitbot</h2></a>
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="sun"></i></a></li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ml-auto">
+                <li><span class="guide-ing">Nochitbot 시스템 접속 중 webcam을 통해 접속활동에 대한 모니터링이 진행되고 있습니다.</span></li>
+                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none"><span class="user-name font-weight-bolder">시험감독관 : 김은별</span></div><span class="avatar"><img class="round" src="../../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+                        <a class="dropdown-item" href="javascript:void(0);"><i class="mr-50" data-feather="user"></i> Profile</a>
+                        <a class="dropdown-item" href="monitor-auth-login.html"><i class="mr-50"
+                                data-feather="power"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- END: Header-->
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../starter-kit/ltr/vertical-menu-template-dark/">
+                    <span class="brand-logo">
+                        <img src="../../app-assets/images/common/logo.png" alt="NoChitBot logo" width="26" height="26">
+                    </span>
+                        <h2 class="brand-text">Nochitbot</h2>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Home">Home</span></a>
+                </li>
+                <li class=" nav-item">
+                    <a class="d-flex align-items-center" href="#">
+                        <i data-feather="layout"></i><span class="menu-title text-truncate" data-i18n="Page Layouts">Page Layouts</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content chat-application">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+                <div class="content-header-left col-md-9 col-12 mb-2">
+                    <div class="row breadcrumbs-top">
+                        <div class="col-12">
+                            <h2 class="content-header-title float-left mb-0">시험 제목 : 교원 구몬 수학 인정 테스트 2021</h2>
+                            <div class="breadcrumb-wrapper">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="page-main.html">Home</a> </li>
+                                    <li class="breadcrumb-item"><a href="page-main.html">일정확인</a></li>
+                                    <li class="breadcrumb-item active">교원 구몬 수학 인정 테스트 2021 </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-header-right text-md-right col-md-3 col-12 d-md-block d-none">
+                    <div class="form-group breadcrumb-right">
+                        <div class="dropdown">
+                            <button class="btn-icon btn btn-primary btn-round btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="grid"></i></button>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item" href="javascript:void(0);"><i class="mr-1" data-feather="check-square"></i><span class="align-middle">감독페이지</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-12">
+                     <div class="alert alert-primary" role="alert">
+                         <div class="alert-body text-light">
+                             <strong>1교시 :</strong> 2021년 07월30일 09시30분 ~ 10시20분
+                         </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="content-body">
+             dfdf
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- 응시생 신분확인 -->
+    <div class="modal fade eventDetail" id="eventEntrant" data-backdrop="static" tabindex="-1" role="dialog" aria-hidden="true"> <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">응시생 신분확인</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <!-- 2020.08.19 팝업 병합(이벤트히스토리 팝업 삭제) -->
+                    <div class="guide-entrant">
+        
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">감독관은 응시생의 등록 신분증과 얼굴인식 등록 사진과 비교하여 동일인인지 확인하시기 바랍니다.</li>
+                            <li class="list-group-item">추가로 주관기관에서 제공받은 개인정보를 확인하여 동일하다고 판단되면 [확인 완료], 확인이 불가능할 경우 [재등록 요청], [확인 보류] 버튼을 클릭하여 주시기 바랍니다.</li>
+                            <li class="list-group-item">[확인 완료] 버튼을 누르면 등록자가 확정되어 재등록이나 수정등록이 불가능</li>
+                            <li class="list-group-item">[재등록 요청] 할 경우 응시생에게 메일로 재등록 요청 메일이 발송</li>
+                            <li class="list-group-item">[확인 보류]의 경우 주관기관에 확인요청 메일이 발송되어 신분 확인을 주관기관에 요청(1일 취합하여 확인요청 메일 발송)</li>
+                        </ul>
+                        <div class="guide-imgbox row">
+                            <div class="col">
+                                <div class="inner-img"><img src="../../app-assets/images/common/idcard.png"></div>
+                            </div>
+                            <div class="col">
+                                <div class="inner-img"><img
+                                        src="https://search.pstatic.net/sunny/?src=https%3A%2F%2Fi.pinimg.com%2F736x%2Faa%2F58%2F73%2Faa587374f70cecc70b1be57ea09abf2d.jpg&amp;type=sc960_832">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //2020.08.19 팝업 병합 -->
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <!-- 2020.08.21 w-100삭제 -->
+                    <button type="button" class="btn btn-outline-primary d-block" disabled>확인 보류</button>
+                    <button type="button" class="btn btn-outline-primary d-block">재등록 요청</button>
+                    <button type="button" class="btn btn-primary d-block">확인 완료</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal : 모니터링 이벤트 상태이상 감지 상세 -->
+
+    
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-dark">
+        <p class="clearfix mb-0"><span class="float-md-left d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2021<a
+                    class="ml-25" href="https://metsakuur.com" target="_blank">metsakuur</a><span
+                    class="d-none d-sm-inline-block">, All rights Reserved</span></span></p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+        <script src="../../app-assets/vendors/js/editors/quill/katex.min.js"></script>
+        <script src="../../app-assets/vendors/js/editors/quill/highlight.min.js"></script>
+        <script src="../../app-assets/vendors/js/editors/quill/quill.min.js"></script>
+        <script src="../../app-assets/vendors/js/extensions/toastr.min.js"></script>
+        <script src="../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../app-assets/js/scripts/pages/app-sliding.js"></script>
+    <script src="../../app-assets/js/scripts/pages/app-chat.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+    <script>
+        //이미지 변경 함수 호출
+        $(document).ready(function () {
+            changeIMG();
+            
+        });
+        
+        function changeIMG(){
+            $('.user-check.active').find('.ficon').replaceWith(feather.icons['user-check'].toSvg({ class: 'ficon' }));
+            $('.user-video.active').find('.ficon').replaceWith(feather.icons['video'].toSvg({ class: 'ficon' }));
+        }
+    </script>
+
+    <script>
+        //sound meter
+        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+        if (navigator.getUserMedia) {
+        navigator.getUserMedia({
+            audio: true
+            },
+            function(stream) {
+            audioContext = new AudioContext();
+            analyser = audioContext.createAnalyser();
+            microphone = audioContext.createMediaStreamSource(stream);
+            javascriptNode = audioContext.createScriptProcessor(2048, 1, 1);
+
+            analyser.smoothingTimeConstant = 0.8;
+            analyser.fftSize = 1024;
+
+            microphone.connect(analyser);
+            analyser.connect(javascriptNode);
+            javascriptNode.connect(audioContext.destination);
+
+            canvasContext = $(".sound-meter")[0].getContext("2d");
+
+            javascriptNode.onaudioprocess = function() {
+                var array = new Uint8Array(analyser.frequencyBinCount);
+                analyser.getByteFrequencyData(array);
+                var values = 0;
+
+                var length = array.length;
+                for (var i = 0; i < length; i++) {
+                    values += (array[i]);
+                }
+
+                var average = values / length;
+
+        //console.log(Math.round(average - 40));
+
+                canvasContext.clearRect(0, 0, 100, 20);
+                canvasContext.fillStyle = '#BadA55';
+                canvasContext.fillRect(average - 100, 0, 100, 20);
+                canvasContext.fillStyle = '#fff';
+                canvasContext.font = "12px";
+                canvasContext.fillText(Math.round(average - 0), -2, 20);
+
+                } // end fn stream
+            },
+            function(err) {
+            console.log("The following error occured: " + err.name)
+            });
+        } else {
+        console.log("getUserMedia not supported");
+        }
+        jQuery.event.special.touchstart = { setup: function( _, ns, handle ){ if ( ns.includes("noPreventDefault") ) {
+        this.addEventListener("touchstart", handle, { passive: false }); } else { this.addEventListener("touchstart",
+        handle, { passive: true }); } } };
+    </script>
+
+</body>
+<!-- END: Body-->
+
+</html>

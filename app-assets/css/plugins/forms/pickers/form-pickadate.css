@@ -3,7 +3,7 @@
 }
 
 .picker__day--today:before, .picker__button--today:before {
-  border-top : 6px solid #7367F0;
+  border-top : 6px solid #0D92FF;
 }
 
 .picker__button--clear:before {
@@ -11,14 +11,15 @@
 }
 
 .picker__day--highlighted, .picker__day--highlighted:hover, .picker--focused .picker__day--highlighted, .picker__list-item--selected, .picker__list-item--selected:hover, .picker--focused .picker__list-item--selected {
-  background-color : #7367F0;
+  background-color : #0D92FF;
 }
 
 .picker__nav--prev:before, .picker__nav--next:before, .picker__button--close:before {
   content : '';
   background-repeat : no-repeat;
   background-position : center;
-  background-size : 18px;
+  -moz-background-size : 18px;
+       background-size : 18px;
   color : #6E6B7B;
   width : 8px;
   height : 18px;

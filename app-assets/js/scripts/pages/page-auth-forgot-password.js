@@ -30,6 +30,10 @@ $(function () {
         'forgot-password-email': {
           required: true,
           email: true
+        },
+        'forgot-password-name': {
+          required: true,
+          remote: true
         }
       }
     });
